@@ -12,17 +12,23 @@
 
   <body class="body">
     <header class="header">
-      <div class="header__logo logo"><a href="#" class="logo__link"></a></div>
+      <div class="header__logo logo"><a href="#" class="logo__link">
+          <img class="logo__img" src="img/dest/logo.svg" alt="Screenshoter+ - Скриншот и запись экрана в один клик"
+            width="141" height="22"></a>
+      </div>
       <nav class="header__nav nav mobile">
         <!-- <input type="checkbox" class="menu__input" id="menu" />
         <label for="menu" class="menu__label"><span class="menu__btn"></span></label> -->
         <ul class="nav__list nav__mobily">
-          <li class="nav__item"><a href="#" class="nav__link"><span class="nav__text">Функции</span></a></li>
-          <li class="nav__item"><a href="#" class="nav__link"><span class="nav__text">Преимущества</span></a></li>
-          <li class="nav__item"><a href="#" class="nav__link"><span class="nav__text">Как использовать</span></a></li>
-          <li class="nav__item"><a href="#" class="nav__link"><span class="nav__text">Частые вопросы</span></a></li>
+          <li class="nav__item"><a href="#functions" class="nav__link"><span class="nav__text">Функции</span></a></li>
+          <li class="nav__item"><a href="#utility" class="nav__link"><span class="nav__text">Преимущества</span></a>
+          </li>
+          <li class="nav__item"><a href="#use" class="nav__link"><span class="nav__text">Как использовать</span></a>
+          </li>
+          <li class="nav__item"><a href="#faq" class="nav__link"><span class="nav__text">Частые вопросы</span></a></li>
         </ul>
         <ul class="nav__list nav__list--lang">
+          <!-- возможно выпадающий список -->
           <li class="nav__item nav__item--lang nav__item--lang--activ">
             <span class="nav__text nav__text--lang">RU</span>
           </li>
@@ -67,9 +73,13 @@
         </article>
       </section>
       <section class="screen">
-        <div class="screen__gig">
+        <figure class="screen__gif">
+          <img src="img/dest/gif-fon.png" alt="Gif файл запись экрана" class="screen__foto" width="705" height="397">
+          <figcaption class="screen__figcaption"></figcaption>
+        </figure>
+        <!-- <div class="screen__gif">
           <img src="#" alt="Gif файл запись экрана" class="screen__foto" width="705" height="397">
-        </div>
+        </div> -->
         <div class="screen__info">
           <h3 class="screen__title">Запись экрана</h3>
           <p class="screen__text">Недостаточно снимков? Запишите происходящее на экране со своим голосом или звуком
@@ -81,9 +91,13 @@
         </div>
       </section>
       <section class="click">
-        <div class="click__gig">
+        <figure class="click__gif">
+          <img src="img/dest/gif-fon.png" alt="Gif файл запись экрана" class="click__foto" width="705" height="397">
+          <figcaption class="click__figcaption"></figcaption>
+        </figure>
+        <!-- <div class="click__gif">
           <img src="#" alt="Gif файл В один клик" class="click__foto" width="705" height="397">
-        </div>
+        </div> -->
         <div class="click__info">
           <h3 class="click__title">В один клик</h3>
           <span class="click__text click__text--bold">Не нужно запоминать комбинации клавиш</span>
@@ -93,9 +107,13 @@
         </div>
       </section>
       <section class="link">
-        <div class="link__gig">
+        <figure class="link__gif">
+          <img src="img/dest/gif-fon.png" alt="Gif файл запись экрана" class="link__foto" width="705" height="397">
+          <figcaption class="link__figcaption"></figcaption>
+        </figure>
+        <!-- <div class="link__gif">
           <img src="#" alt="Gif файл Мгновенная ссылка" class="link__foto" width="705" height="397">
-        </div>
+        </div> -->
         <div class="link__info">
           <h3 class="link__title">Мгновенная ссылка</h3>
           <p class="link__text">Мгновенное получение ссылки на снимок или видео. Вы только нажали Enter, а ссылка уже
@@ -106,9 +124,13 @@
         </div>
       </section>
       <section class="editor">
-        <div class="editor__gig">
+        <figure class="editor__gif">
+          <img src="img/dest/gif-fon.png" alt="Gif файл запись экрана" class="editor__foto" width="705" height="397">
+          <figcaption class="editor__figcaption"></figcaption>
+        </figure>
+        <!-- <div class="editor__gif">
           <img src="#" alt="Gif файл И редактор снимков" class="editor__foto" width="705" height="397">
-        </div>
+        </div> -->
         <div class="editor__info">
           <h3 class="editor__title">И редактор снимков</h3>
           <span class="editor__text editor__text--bold">Более 5 инструментов</span>
@@ -134,24 +156,24 @@
         <button class="download__button button button--download">
           <span class="button__text">Скачать бесплатно</span></button>
       </section>
-      <section class="functions">
+      <section class="functions" id="functions">
         <h2 class="functions__title">Screenshoter</h2>
         <span class="functions__subtitle"> - это функции на каждый день</span>
         <div class="functions__wrap">
           <ol class="functions__list">
-            <li class="functions__item">Обмен идеями
+            <li class="functions__item function__item--toroid">Обмен идеями
               <p class="functions__text">Когда нужно что-то наглядно показать коллеге, исполнителю или заказчику —
                 можно сделать снимок экрана и добавить к нему комментарий.</p>
               <p class="functions__text">А если ситуация требует более детального объяснения — окей, не проблема.
                 Screenshoter поможет записать видео экрана вместе с вашими голосовыми комментариями</p>
             </li>
-            <li class="functions__item">Создание инструкций
+            <li class="functions__item function__item--cube">Создание инструкций
               <p class="functions__text">Нужно что-то наглядно объяснить? Создавайте удобные, пошаговые инструкции,
                 добавляя комментарии и визуальные отметки в необходимом месте скриншота.</p>
               <p class="functions__text">Поделиться снимком или видеозаписью можно с помощью ссылки, которая мгновенно
                 появляется в буфере обмена</p>
             </li>
-            <li class="functions__item">Обратная связь
+            <li class="functions__item function__item--cone">Обратная связь
               <p class="functions__text">Если в процессе работы приложения, сайта или сервиса возникла ошибка, её
                 можно моментально зафиксировать.</p>
               <p class="functions__text">Отправьте скриншот в техподдержку, где будет видно, в чем именно заключается
@@ -160,50 +182,62 @@
           </ol>
         </div>
       </section>
-      <section class="use">
+      <section class="use" id="use">
         <h2 class="use__subtitle">Как использовать </h2>
         <span class="use__title">Screenshoter</span>
         <div class="use__wrap">
           <ol class="use__list">
             <li class="use__item">Шаг 1.
-              <div class="use__inner"><img src="#" alt="Кадр с загрузкой программы" class="use__foto" width="460"
+              <figure class="use__figure">
+                <img src="img/dest/step-fon.png" alt="Кадр с загрузкой программы" class="use__foto" width="460"
                   height="200">
-                <button class="use__button button">
-                  <span class="button__text">Скачать бесплатно</span></button>
-                <p class="use__text use__text--bold">Скачайте программу</p>
-                <p class="use__text">на свой ПК или ноутбук</p>
-              </div>
+                <figcaption class="use__figcaption">
+                  <button class="use__button button">
+                    <span class="button__text">Скачать бесплатно</span></button>
+                  <p class="use__text use__text--bold">Скачайте программу</p>
+                  <p class="use__text">на свой ПК или ноутбук</p>
+                </figcaption>
+              </figure>
             </li>
             <li class="use__item">Шаг 2.
-              <div class="use__inner"><img src="#" alt="Кадр с загрузкой программы" class="use__foto" width="460"
+              <figure class="use__figure">
+                <img src="img/dest/step-fon.png" alt="Кадр с загрузкой программы" class="use__foto" width="460"
                   height="200">
-                <p class="use__text use__text--bold">Запустите Screenshoter:</p>
-                <p class="use__text"> программа будет работать в фоновом режиме</p>
-              </div>
+                <figcaption class="use__figcaption">
+                  <p class="use__poster">Кадр с загрузкой программы</p>
+                  <p class="use__text use__text--bold">Запустите Screenshoter:</p>
+                  <p class="use__text"> программа будет работать в фоновом режиме</p>
+                </figcaption>
+              </figure>
             </li>
             <li class="use__item">Шаг 3.
-              <div class="use__inner"><img src="#" alt="Кадр с загрузкой программы" class="use__foto" width="460"
+              <figure class="use__figure">
+                <img src="img/dest/step-fon.png" alt="Кадр с загрузкой программы" class="use__foto" width="460"
                   height="200">
-                <p class="use__text use__text--bold">Наслаждайтесь удобством</p>
-                <p class="use__text">и быстродействием</p>
-              </div>
+                <figcaption class="use__figcaption">
+                  <p class="use__poster">Кадр с загрузкой программы</p>
+                  <p class="use__text use__text--bold">Наслаждайтесь удобством</p>
+                  <p class="use__text">и быстродействием</p>
+                </figcaption>
+              </figure>
             </li>
           </ol>
           <button class="use__button button button--download">
             <span class="button__text">Скачать бесплатно</span></button>
         </div>
       </section>
-      <section class="utility">
+      <section class="utility" id="utility">
         <h2 class="utility__title">Screenshoter</h2>
         <span class="utility__subtitle">полезен всем, кто работает в интернете</span>
         <p class="utility__text">Согласовывайте рабочие вопросы, показывайте интересные вещи и обсуждайте любые темы.
           Делитесь комментариями с помощью бесплатного инструмента 2 в 1</p>
+        <p class="utility__text utility__text--triangle">Бесплатная программа для Windows</p>
         <article class="card">
-          <h3 class="card__title card__title--registration">Без регистрации:не нужно вводить никаких персональных данных
+          <h3 class="card__title card__title--star">Без регистрации:не нужно вводить никаких персональных данных
           </h3>
         </article>
         <article class="card">
-          <h3 class="card__title card__title--free">Бесплатно, без скрытых платежей и комиссий</h3>
+          <h3 class="card__title card__title--shield">Бесплатно, без скрытых платежей и комиссий</h3>
         </article>
         <article class="card">
           <h3 class="card__title card__title--unlimited">Неограниченное количество скриншотов и записей</h3>
@@ -213,11 +247,11 @@
           </h3>
         </article>
       </section>
-      <section class="faq">
+      <section class="faq" id="faq">
         <h2 class="faq__title">FAQ</h2>
         <ol class="faq__list">
           <li class="faq__item">
-            <details class="faq__details">
+            <details class="faq__details" open>
               <summary class="faq__summary">Платная ли программа?</summary>
               <p class="faq__text">Нет, Screenshoter абсолютно бесплатный. Вам не нужно платить за скачивание,
                 установку или использование программы — все функции бесплатные</p>
@@ -274,13 +308,13 @@
         <li class="footer__item"><a href="#" class="footer__link"><span class="footer__text">Продукт</span></a>
           <ul class="nav__list nav__list--footer">
             <li class="nav__item nav__item--footer">
-              <a href="#" class="nav__link nav__link--footer">
+              <a href="#functions" class="nav__link nav__link--footer">
                 <span class="nav__text nav__text--footer">Функции</span></a></li>
             <li class="nav__item nav__item--footer">
-              <a href="#" class="nav__link nav__link--footer">
+              <a href="#utility" class="nav__link nav__link--footer">
                 <span class="nav__text nav__text--footer">Преимущества</span></a></li>
             <li class="nav__item nav__item--footer">
-              <a href="#" class="nav__link nav__link--footer">
+              <a href="#use" class="nav__link nav__link--footer">
                 <span class="nav__text nav__text--footer">Как использовать</span></a></li>
           </ul>
         </li>

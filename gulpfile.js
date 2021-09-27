@@ -16,7 +16,8 @@ const uglify = require('gulp-uglify-es').default;
 // Подключаем модули gulp-sass и gulp-less
 const sass = require('gulp-sass')(require('sass'));
 const less = require('gulp-less');
-
+// Что бы стили не сжимались
+const cssbeautify = require('gulp-cssbeautify');
 // Подключаем Autoprefixer
 const autoprefixer = require('gulp-autoprefixer');
 
@@ -54,15 +55,21 @@ function scripts() {
 function styles() {
   return src('app/' + preprocessor + '/style.' + preprocessor + '') // Выбираем источник: "app/sass/style.sass" или "app/less/style.less"
     .pipe(eval(preprocessor)()) // Преобразуем значение переменной "preprocessor" в функцию
-    .pipe(concat('style.min.css')) // Конкатенируем в файл style.min.js
+    .pipe(cssbeautify())
     .pipe(
-      autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true })
+      autoprefixer({
+        overrideBrowserslist: ['last 10 versions'],
+        grid: true,
+        cascade: true,
+      })
     ) // Создадим префиксы с помощью Autoprefixer
+    .pipe(dest('app/css/'))
     .pipe(
       cleancss({
         level: { 1: { specialComments: 0 } } /* , format: 'beautify' */,
       })
     ) // Минифицируем стили
+    .pipe(concat('style.min.css')) // Конкатенируем в файл style.min.js
     .pipe(dest('app/css/')) // Выгрузим результат в папку "app/css/"
     .pipe(browserSync.stream()); // Сделаем инъекцию в браузер
 }
@@ -96,6 +103,7 @@ function buildcopy() {
   return src(
     [
       // Выбираем нужные файлы
+      'app/css/**/style.css',
       'app/css/**/*.min.css',
       'app/js/**/*.min.js',
       'app/img/dest/**/*',
@@ -107,7 +115,7 @@ function buildcopy() {
 }
 
 function cleandist() {
-  return del('dest/**/*', { force: true }); // Удаляем все содержимое папки "dist/"
+  return del('docs/**/*', { force: true }); // Удаляем все содержимое папки "dist/"
 }
 
 function startwatch() {
