@@ -1,15 +1,12 @@
 {
   "name": "screenshoter",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "server": "gulp browsersync",
-    "default": "gulp default",
-    "build": "gulp build"
+  "description": "Проект сервиса скриншотов и записи с экрана в 1 клик «Screenshoter+», представлен в виде одностраничного сайта.",
+  "main": "index.html",
+  "directories": {
+    "doc": "docs"
   },
-  "author": "",
-  "license": "ISC",
+  "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.27.5",
     "compress-images": "^1.9.9",
@@ -20,13 +17,32 @@
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-cssbeautify": "^3.0.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-group-css-media-queries": "^1.2.2",
     "gulp-less": "^5.0.0",
-    "gulp-sass": "^5.0.0",
+    "gulp-ttf2woff": "^1.1.1",
+    "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify-es": "^3.0.0",
+    "gulp-webp": "^4.0.1",
+    "gulp-webp-html": "^1.0.2",
+    "gulp-webpcss": "^1.1.1",
+    "gulp-xv-webp-html": "^1.1.2",
     "pngquant-bin": "^6.0.0",
-    "sass": "^1.42.1"
+    "webp-converter": "^2.2.3",
+    "plugin-error": "^1.0.0",
+    "through2": "^4.0.2"
   },
-  "dependencies": {
-    "jquery": "^3.6.0"
-  }
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OksanaZhuravel/Screenshoter.git"
+  },
+  "author": "OZhuravel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OksanaZhuravel/Screenshoter/issues"
+  },
+  "homepage": "https://github.com/OksanaZhuravel/Screenshoter#readme"
 }
