@@ -1,5 +1,5 @@
 function testWebP(callback) {
-  var webP = new Image();
+  let webP = new Image();
   webP.onload = webP.onerror = function () {
     callback(webP.height == 2);
   };
@@ -12,5 +12,19 @@ testWebP(function (support) {
     document.querySelector('body').classList.add('webp');
   } else {
     document.querySelector('body').classList.add('no-webp');
+  }
+});
+let navMain = document.querySelector('.nav'),
+  navToggle = document.querySelector('.nav__toggle');
+
+navMain.classList.remove('nav--nojs');
+
+navToggle.addEventListener('click', function () {
+  if (navMain.classList.contains('nav--closed')) {
+    navMain.classList.remove('nav--closed');
+    navMain.classList.add('nav--opened');
+  } else {
+    navMain.classList.add('nav--closed');
+    navMain.classList.remove('nav--opened');
   }
 });

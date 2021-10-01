@@ -39,7 +39,7 @@ let { dest, src } = require('gulp'),
   uglify = require('gulp-uglify-es').default,
   imagecomp = require('compress-images'),
   webp = require('gulp-webp'),
-  webpHTML = require('gulp-xv-webp-html'),
+  webpHTML = require('gulp-webp-for-html'),
   webpcss = require('gulp-webpcss'),
   ttf2woff = require('gulp-ttf2woff'),
   ttf2woff2 = require('gulp-ttf2woff2');
@@ -87,7 +87,7 @@ function images() {
   return src(path.src.img)
     .pipe(
       webp({
-        quality: 70,
+        quality: 90,
       })
     )
     .pipe(dest(path.build.img))
@@ -95,12 +95,10 @@ function images() {
 }
 
 function html() {
-  return (
-    src(path.src.html)
-      // .pipe(webpHTML(['.jpg', '.svg'])) //не работает если есть тег <fugure>
-      .pipe(dest(path.build.html))
-      .pipe(browsersync.stream())
-  );
+  return src(path.src.html)
+    .pipe(webpHTML(['.jpg', '.png'])) //не работает если есть тег <fugure>
+    .pipe(dest(path.build.html))
+    .pipe(browsersync.stream());
 }
 function styles() {
   return src(path.src.css)
