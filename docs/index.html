@@ -12,10 +12,10 @@
 
   <body class="body">
     <header class="header">
-      <div class="header__logo logo"><a href="#" class="logo__link">
+      <div class="logo"><a href="#" class="logo__link">
           <img class="logo__img" src="img/dest/logo.svg" alt="Screenshoter+" width="141" height="22"></a>
       </div>
-      <nav class="header__nav nav nav--closed nav--nojs">
+      <nav class="nav nav--closed nav--nojs">
         <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="nav__wrap">
           <ul class="nav__list site-list">
@@ -33,12 +33,14 @@
             </li>
           </ul>
           <ul class="nav__list lang-list">
-            <!-- возможно выпадающий список -->
-            <li class="lang-list__item lang-list__item--activ">
-              <span class="lang-list__text">RU</span>
-            </li>
-            <li class="lang-list__item">
-              <span class="lang-list__text">ENG</span>
+            <li class="lang-list__item"><a href="#" class="lang-list__link"><span
+                  class="lang-list__text lang-list__text--activ">RU</span></a>
+              <ul class="nav__list lang-list--choice">
+                <li class="lang-list__item lang-list__item--choice lang-list__item--choice--activ">
+                  <a href="#" class="lang-list__link"><span class="lang-list__text">RU</span></a></li>
+                <li class="lang-list__item lang-list__item--choice">
+                  <a href="#" class="lang-list__link"><span class="lang-list__text">ENG</span></a></li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -50,7 +52,7 @@
         <span class="promo__subtitle"> в 1 клик</span>
         <p class="promo__text">Вместе со Screenshoter можно в один клик сделать снимок или записать происходящее на
           экране ПК, чтобы поделиться с кем угодно</p>
-        <button class="promo__button button"><span class="button__text">Скачать бесплатно</span></button>
+        <button class="promo__button button" type="button"><span class="button__text">Скачать бесплатно</span></button>
         <div class="promo__foto">
 
 									<picture>

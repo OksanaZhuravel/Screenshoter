@@ -1,3 +1,4 @@
+// Проверка поддержки web формата картинок
 function testWebP(callback) {
   let webP = new Image();
   webP.onload = webP.onerror = function () {
@@ -14,6 +15,7 @@ testWebP(function (support) {
     document.querySelector('body').classList.add('no-webp');
   }
 });
+// Открытие, закрытие мобильного меню
 let navMain = document.querySelector('.nav'),
   navToggle = document.querySelector('.nav__toggle');
 
