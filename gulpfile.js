@@ -138,11 +138,7 @@ function fontsStyle(params) {
           if (c_fontname != fontname) {
             fs.appendFile(
               source_folder + '/less/fonts.less',
-              '.font("' +
-                fontname +
-                '", "' +
-                fontname +
-                '", "400", "normal");\r\n',
+              '.font("' + fontname + '", "' + fontname + '", 400, normal);\r\n',
               cb
             );
           }
