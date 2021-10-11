@@ -15,4 +15,4 @@ Mobile first для экранов 375px.
 
 Код прошел валидацию.
 
-Опубликованный проект с помощью github по ссылке:
+Опубликованный проект с помощью github по ссылке: https://oksanazhuravel.github.io/Screenshoter/
