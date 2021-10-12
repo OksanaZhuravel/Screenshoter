@@ -538,51 +538,51 @@ input[type="radio"].visually-hidden {
 }
 
 .card__img--screen {
-  background-image: url('../../img/dest/screen.svg');
+  background-image: url('../img/dest/screen.svg');
 }
 
 .card__img--link {
-  background-image: url('../../img/dest/link.svg');
+  background-image: url('../img/dest/link.svg');
 }
 
 .card__img--editor {
-  background-image: url('../../img/dest/editor.svg');
+  background-image: url('../img/dest/editor.svg');
 }
 
 .card__img--free {
-  background-image: url('../../img/dest/free.svg');
+  background-image: url('../img/dest/free.svg');
 }
 
 .card__img--color {
-  background-image: url('../../img/dest/color.svg');
+  background-image: url('../img/dest/color.svg');
 }
 
 .card__img--figure {
-  background-image: url('../../img/dest/figure.svg');
+  background-image: url('../img/dest/figure.svg');
 }
 
 .card__img--comments {
-  background-image: url('../../img/dest/comments.svg');
+  background-image: url('../img/dest/comments.svg');
 }
 
 .card__img--area {
-  background-image: url('../../img/dest/area.svg');
+  background-image: url('../img/dest/area.svg');
 }
 
 .card__img--star {
-  background-image: url('../../img/dest/star.svg');
+  background-image: url('../img/dest/star.svg');
 }
 
 .card__img--shield {
-  background-image: url('../../img/dest/shield.svg');
+  background-image: url('../img/dest/shield.svg');
 }
 
 .card__img--unlimited {
-  background-image: url('../../img/dest/unlimited.svg');
+  background-image: url('../img/dest/unlimited.svg');
 }
 
 .card__img--time {
-  background-image: url('../../img/dest/time.svg');
+  background-image: url('../img/dest/time.svg');
 }
 
 .tool {
