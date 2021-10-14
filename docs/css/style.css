@@ -251,6 +251,7 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 0 10px rgba(140, 140, 140, 0.25);
   border-radius: 4px;
   text-align: center;
+  z-index: 4;
 }
 
 .button {
@@ -590,6 +591,7 @@ input[type="radio"].visually-hidden {
   gap: 30px;
   justify-items: center;
   box-sizing: border-box;
+  width: 100%;
 }
 
 .tool__wrap {
@@ -608,8 +610,8 @@ input[type="radio"].visually-hidden {
 .tool__wrap::after {
   content: " ";
   position: relative;
-  width: 85px;
-  height: 70px;
+  width: 100%;
+  min-height: 70px;
   background-image: url('../img/dest/tolltext.svg');
   background-size: contain;
   background-repeat: no-repeat;
@@ -622,6 +624,8 @@ input[type="radio"].visually-hidden {
   gap: 20px;
   justify-items: center;
   text-align: center;
+  z-index: 5;
+  max-width: 500px;
 }
 
 .tool__title {
@@ -653,12 +657,13 @@ input[type="radio"].visually-hidden {
   content: "";
   display: block;
   width: 49px;
-  height: 61px;
+  max-width: 100%;
+  min-height: 61px;
   z-index: 2;
   position: absolute;
   top: -61px;
   left: -15px;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -690,14 +695,14 @@ input[type="radio"].visually-hidden {
 .click::after {
   content: "";
   display: block;
-  width: 44px;
-  height: 44px;
+  width: 60px;
+  max-width: 100%;
+  min-height: 60px;
   z-index: 3;
   position: absolute;
-  top: -54px;
-  right: 130px;
-  transform: rotate(30deg);
-  background-size: cover;
+  top: -70px;
+  right: 115px;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -706,13 +711,14 @@ input[type="radio"].visually-hidden {
   content: "";
   display: block;
   width: 262px;
-  height: 230px;
+  max-width: 100%;
+  min-height: 230px;
   z-index: 2;
   position: absolute;
   top: -54px;
   right: -15px;
   background-image: url("../img/dest/clickelipse.svg");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   backdrop-filter: blur(40px);
@@ -730,28 +736,30 @@ input[type="radio"].visually-hidden {
   content: "";
   display: block;
   width: 59px;
-  height: 68px;
+  max-width: 100%;
+  min-height: 70px;
   z-index: 3;
   position: absolute;
-  top: -80px;
-  left: 44px;
+  top: -91px;
+  left: 29px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .no-webp .link::before {
-  background-image: url("../img/dest/ellipselink2.png"); }
+  background-image: url("../img/dest/ellipselink.png"); }
 
 .link::before {
   content: "";
   display: block;
+  max-width: 100%;
   width: 374px;
-  height: 233px;
+  min-height: 233px;
   z-index: 2;
   position: absolute;
   top: -66px;
-  left: 0;
+  left: -15px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -790,12 +798,13 @@ input[type="radio"].visually-hidden {
   content: "";
   display: block;
   width: 73px;
-  height: 73px;
+  max-width: 100%;
+  min-height: 73px;
   z-index: 2;
   position: absolute;
   top: -79px;
-  left: 185px;
-  background-size: cover;
+  right: 90px;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1000,8 +1009,7 @@ input[type="radio"].visually-hidden {
   }
 
   .tool__wrap::after {
-    width: 98px;
-    height: 58px;
+    min-height: 58px;
   }
 
   .tool__info {
@@ -1036,10 +1044,10 @@ input[type="radio"].visually-hidden {
   }
 
   .screen::after {
-    top: -135px;
+    top: -125px;
     left: -45px;
     width: 97px;
-    height: 125px;
+    min-height: 125px;
   }
 
   .screen::before {
@@ -1055,16 +1063,19 @@ input[type="radio"].visually-hidden {
   }
 
   .click::after {
-    width: 100px;
-    height: 100px;
-    top: -95px;
-    right: 290px;
+    width: 110px;
+    min-height: 110px;
+    top: -126px;
+    right: 245px;
   }
+
+  .no-webp .click::before {
+    background-image: url("../img/dest/clickelipsetable.png"); }
 
   .click::before {
     width: 529px;
-    height: 466px;
-    top: -112px;
+    min-height: 466px;
+    top: -117px;
     right: -45px;
   }
 
@@ -1074,15 +1085,19 @@ input[type="radio"].visually-hidden {
 
   .link::after {
     width: 122px;
-    height: 140px;
-    top: -170px;
-    left: 80px;
+    min-height: 140px;
+    top: -156px;
+    left: 23px;
   }
+
+  .no-webp .link::before {
+    background-image: url("../img/dest/ellipselinktable.png"); }
 
   .link::before {
     width: 732px;
-    height: 482px;
+    min-height: 482px;
     top: -125px;
+    left: -140px;
   }
 
   .link__text {
@@ -1102,7 +1117,7 @@ input[type="radio"].visually-hidden {
 
   .editor::after {
     width: 150px;
-    height: 150px;
+    min-height: 150px;
     top: -140px;
     left: 447px;
   }
@@ -1364,7 +1379,7 @@ input[type="radio"].visually-hidden {
     top: -361px;
     left: -40px;
     width: 246px;
-    height: 292px;
+    min-height: 292px;
   }
 
   .screen::before {
@@ -1377,17 +1392,19 @@ input[type="radio"].visually-hidden {
 
   .click::after {
     width: 180px;
-    height: 180px;
+    min-height: 180px;
     top: -175px;
     right: 335px;
   }
 
+  .no-webp .click::before {
+    background-image: url("../img/dest/clickelipsedestop.png"); }
+
   .click::before {
-    height: 920px;
+    min-height: 920px;
     width: 800px;
     top: -210px;
     right: 26px;
-    background-size: contain;
   }
 
   .click__wrap {
@@ -1405,16 +1422,19 @@ input[type="radio"].visually-hidden {
 
   .link::after {
     width: 221px;
-    height: 299px;
-    top: -200px;
+    min-height: 299px;
+    top: -323px;
     left: 0;
   }
 
+  .no-webp .link::before {
+    background-image: url("../img/dest/ellipselinkdesktop.png"); }
+
   .link::before {
     width: 1030px;
-    height: 811px;
+    min-height: 811px;
     top: -200px;
-    left: -55px;
+    left: 0;
   }
 
   .link__text {
@@ -1431,7 +1451,7 @@ input[type="radio"].visually-hidden {
 
   .editor::after {
     width: 193px;
-    height: 193px;
+    min-height: 193px;
     top: -210px;
     left: 1400px;
   }
@@ -1498,11 +1518,31 @@ input[type="radio"].visually-hidden {
 
 .webp .link::after { background-image: url(../img/dest/linkfon.webp); }
 
-.webp .link::before { background-image: url(../img/dest/ellipselink2.webp); }
+.webp .link::before { background-image: url(../img/dest/ellipselink.webp); }
 
 .webp .editor::after { background-image: url(../img/dest/editorfon.webp); }
+
+@media (min-width: 768px) {
+
+  .webp .click::before { background-image: url(../img/dest/clickelipsetable.webp); }
+}
+
+@media (min-width: 768px) {
+
+  .webp .link::before { background-image: url(../img/dest/ellipselinktable.webp); }
+}
 
 @media (min-width: 1068px) {
 
   .webp .promo::before { background-image: url(../img/dest/promobefore.webp); }
+}
+
+@media (min-width: 1068px) {
+
+  .webp .click::before { background-image: url(../img/dest/clickelipsedestop.webp); }
+}
+
+@media (min-width: 1068px) {
+
+  .webp .link::before { background-image: url(../img/dest/ellipselinkdesktop.webp); }
 }
