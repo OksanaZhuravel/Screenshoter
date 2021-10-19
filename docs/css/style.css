@@ -1280,7 +1280,7 @@ input[type="radio"].visually-hidden {
   bottom: 306px;
   right: 100px;
   background-color: transparent;
-  background-image: url(../img/dest/link.svg);
+  background-image: url("../img/dest/link.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
