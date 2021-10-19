@@ -1127,6 +1127,165 @@ input[type="radio"].visually-hidden {
   backdrop-filter: blur(36px);
 }
 
+.faq {
+  width: 100%;
+  display: grid;
+  gap: 20px;
+  justify-items: center;
+  position: relative;
+}
+
+.faq::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+  background-color: transparent;
+  background: linear-gradient(123.35deg, rgba(235, 243, 208, 0.05) 0%, rgba(235, 243, 208, 0) 18.4%), radial-gradient(29.9% 70.94% at 44.25% 86.96%, rgba(220, 141, 220, 0.05) 0%, rgba(220, 141, 220, 0) 100%), radial-gradient(33.83% 53.57% at 35.87% 100%, rgba(220, 141, 220, 0.05) 0%, rgba(220, 141, 220, 0) 100%), radial-gradient(42.66% 49.72% at 45.56% 44.65%, rgba(203, 173, 235, 0.05) 0%, rgba(194, 166, 241, 0) 100%), linear-gradient(134.59deg, rgba(205, 249, 232, 0.05) 20.63%, rgba(205, 249, 232, 0) 47.84%), linear-gradient(216.44deg, rgba(192, 169, 240, 0) -16.52%, rgba(192, 169, 240, 0.05) -1.04%, rgba(192, 169, 240, 0) 16.99%), linear-gradient(128.53deg, rgba(192, 169, 240, 0) 28.63%, rgba(192, 169, 240, 0.05) 38.5%, rgba(192, 169, 240, 0) 50.26%), radial-gradient(40.75% 97.37% at 90.75% 40.15%, rgba(255, 253, 177, 0.05) 0%, rgba(254, 228, 191, 0.05) 34.46%, rgba(240, 189, 208, 0.05) 69.5%, rgba(255, 129, 38, 0) 100%), rgba(194, 166, 241, 0.05);
+  backdrop-filter: blur(40px);
+}
+
+.no-webp .faq::before {
+  background-image: url("../img/dest/fagfon.png"); }
+
+.faq::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 153px;
+  left: -15px;
+  width: 375px;
+  height: 100%;
+  z-index: -2;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.faq__title {
+  margin: 30px 0 43px 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #131313;
+}
+
+.faq__list {
+  display: grid;
+  gap: 20px;
+  width: 100%;
+  margin: 0 0 60px 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: counterFaq;
+}
+
+.faq__item {
+  display: grid;
+  gap: 20px;
+  position: relative;
+  counter-increment: counterFaq;
+  padding: 25px 0 30px 40px;
+}
+
+.faq__item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgba(196, 196, 196, 0.1);
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  backdrop-filter: blur(40px);
+  border-radius: 16px;
+}
+
+.faq__item:before {
+  content: "0" counter(counterFaq) ".";
+  color: #7421B0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  width: 40px;
+  height: 28px;
+}
+
+.faq__details[open] .faq__summary::after {
+  background-image: url("../img/dest/close.svg");
+}
+
+.faq__summary {
+  outline: none;
+  max-width: 237px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #131313;
+  list-style-type: none;
+}
+
+.faq__summary::after {
+  content: "";
+  position: absolute;
+  top: 28px;
+  right: 27px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  background-image: url("../img/dest/plus.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.faq__text {
+  max-width: 275px;
+  margin: 20px 0 0 0;
+}
+
+.accede {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.accede__button {
+  margin: 0 0 60px 0;
+}
+
+.accede__text {
+  max-width: 345px;
+  margin: 60px 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #131313;
+}
+
+.accede__text::before {
+  content: "";
+  display: block;
+  width: 114px;
+  height: 114px;
+  position: absolute;
+  bottom: 306px;
+  right: 100px;
+  background-color: transparent;
+  background-image: url(../img/dest/link.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 @media (min-width: 768px) {
   .body {
     width: auto;
@@ -1833,6 +1992,8 @@ input[type="radio"].visually-hidden {
 .webp .functions__item--cube::after { background-image: url(../img/dest/cube.webp); }
 
 .webp .utility__wrap::before { background-image: url(../img/dest/trianglefon.webp); }
+
+.webp .faq::before { background-image: url(../img/dest/fagfon.webp); }
 
 @media (min-width: 768px) {
 
