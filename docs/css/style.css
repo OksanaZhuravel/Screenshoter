@@ -173,8 +173,21 @@ input[type="radio"].visually-hidden {
   color: #290344;
 }
 
+.site-list__link--footer {
+  margin: 0 0 5px 0;
+  padding: 0;
+  box-shadow: none;
+  color: #828282;
+}
+
 .site-list__text {
   color: #565656;
+}
+
+.site-list--footer {
+  flex-flow: column nowrap;
+  padding: 0;
+  list-style: none;
 }
 
 .lang-list {
@@ -1133,6 +1146,7 @@ input[type="radio"].visually-hidden {
   gap: 20px;
   justify-items: center;
   position: relative;
+  margin: 0 0 90px 0;
 }
 
 .faq::after {
@@ -1157,7 +1171,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 153px;
   left: -15px;
-  width: 375px;
+  width: 360px;
   height: 100%;
   z-index: -2;
   background-size: contain;
@@ -1256,9 +1270,66 @@ input[type="radio"].visually-hidden {
   justify-items: center;
   text-align: center;
   position: relative;
+  padding: 103px 0 0 0;
+  box-sizing: border-box;
+}
+
+.accede::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  background-image: url("../img/dest/link.svg");
+  background-size: 114px 114px;
+  background-repeat: no-repeat;
+  background-position: 175px 213px;
+}
+
+.no-webp .accede::before {
+  background-image: url("../img/dest/accedecone.png"); }
+
+.accede::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  background-size: 138px 128px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.accede__wrap {
+  background-color: rebeccapurple;
+  width: 100%;
+  height: 210px;
+  background: linear-gradient(123.35deg, #EBF3D0 0%, rgba(235, 243, 208, 0) 18.4%), radial-gradient(29.9% 70.94% at 44.25% 86.96%, #DC8DDC 0%, rgba(220, 141, 220, 0) 100%), radial-gradient(33.83% 53.57% at 35.87% 100%, #DC8DDC 0%, rgba(220, 141, 220, 0) 100%), radial-gradient(42.66% 49.72% at 45.56% 44.65%, #CBADEB 0%, rgba(194, 166, 241, 0) 100%), linear-gradient(134.59deg, #CDF9E8 20.63%, rgba(205, 249, 232, 0) 47.84%), linear-gradient(216.44deg, rgba(192, 169, 240, 0) -16.52%, #C0A9F0 -1.04%, rgba(192, 169, 240, 0) 16.99%), linear-gradient(128.53deg, rgba(192, 169, 240, 0) 28.63%, #C0A9F0 38.5%, rgba(192, 169, 240, 0) 50.26%), radial-gradient(40.75% 97.37% at 90.75% 40.15%, #FFFDB1 0%, #FEE4BF 34.46%, #F0BDD0 69.5%, rgba(255, 129, 38, 0) 100%), #C2A6F1;
+  opacity: 0.3;
+  border-radius: 10px;
+}
+
+.accede__wrap::before {
+  content: "";
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 210px;
+  background-color: transparent;
+  background: linear-gradient(123.35deg, rgba(235, 243, 208, 0.05) 0%, rgba(235, 243, 208, 0) 18.4%), radial-gradient(29.9% 70.94% at 44.25% 86.96%, rgba(220, 141, 220, 0.05) 0%, rgba(220, 141, 220, 0) 100%), radial-gradient(33.83% 53.57% at 35.87% 100%, rgba(220, 141, 220, 0.05) 0%, rgba(220, 141, 220, 0) 100%), radial-gradient(42.66% 49.72% at 45.56% 44.65%, rgba(203, 173, 235, 0.05) 0%, rgba(194, 166, 241, 0) 100%), linear-gradient(134.59deg, rgba(205, 249, 232, 0.05) 20.63%, rgba(205, 249, 232, 0) 47.84%), linear-gradient(216.44deg, rgba(192, 169, 240, 0) -16.52%, rgba(192, 169, 240, 0.05) -1.04%, rgba(192, 169, 240, 0) 16.99%), linear-gradient(128.53deg, rgba(192, 169, 240, 0) 28.63%, rgba(192, 169, 240, 0.05) 38.5%, rgba(192, 169, 240, 0) 50.26%), radial-gradient(40.75% 97.37% at 90.75% 40.15%, rgba(255, 253, 177, 0.05) 0%, rgba(254, 228, 191, 0.05) 34.46%, rgba(240, 189, 208, 0.05) 69.5%, rgba(255, 129, 38, 0) 100%), rgba(194, 166, 241, 0.05);
+  border: 3px solid rgba(255, 255, 255, 0.12);
+  box-sizing: border-box;
+  backdrop-filter: blur(40px);
+  border-radius: 10px;
 }
 
 .accede__button {
+  z-index: 1;
   margin: 0 0 60px 0;
 }
 
@@ -1271,19 +1342,41 @@ input[type="radio"].visually-hidden {
   color: #131313;
 }
 
-.accede__text::before {
-  content: "";
+.footer {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+
+.footer__logo {
+  justify-self: start;
+  margin: 29px 0 0 0;
+}
+
+.footer__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__item {
+  max-width: 153px;
+}
+
+.footer__link {
   display: block;
-  width: 114px;
-  height: 114px;
-  position: absolute;
-  bottom: 306px;
-  right: 100px;
-  background-color: transparent;
-  background-image: url("../img/dest/link.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  margin: 25px 0 25px 0;
+  text-decoration: none;
+}
+
+.footer__text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #131313;
 }
 
 @media (min-width: 768px) {
@@ -1647,6 +1740,10 @@ input[type="radio"].visually-hidden {
     box-shadow: none;
   }
 
+  .site-list--footer {
+    flex-flow: column nowrap;
+  }
+
   .button {
     width: 235px;
     height: 70px;
@@ -1994,6 +2091,8 @@ input[type="radio"].visually-hidden {
 .webp .utility__wrap::before { background-image: url(../img/dest/trianglefon.webp); }
 
 .webp .faq::before { background-image: url(../img/dest/fagfon.webp); }
+
+.webp .accede::before { background-image: url(../img/dest/accedecone.webp); }
 
 @media (min-width: 768px) {
 
