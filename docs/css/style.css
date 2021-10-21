@@ -291,6 +291,13 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
 }
 
+.button__text--desktop {
+  display: none;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .button--download {
   background: #131313;
 }
@@ -1012,6 +1019,8 @@ input[type="radio"].visually-hidden {
 }
 
 .use__button {
+  width: 226px;
+  height: 67px;
   box-shadow: 0 9px 42px 2.25px rgba(116, 33, 176, 0.48);
   border-radius: 7.5px;
 }
@@ -1034,6 +1043,7 @@ input[type="radio"].visually-hidden {
 }
 
 .use__poster {
+  display: block;
   max-width: 140px;
   opacity: 0.3;
   font-size: 12px;
@@ -1060,7 +1070,7 @@ input[type="radio"].visually-hidden {
   gap: 20px;
   justify-items: center;
   text-align: center;
-  margin: 30px 0 0 0;
+  margin: 30px 0 60px 0;
   box-sizing: border-box;
 }
 
@@ -1331,6 +1341,7 @@ input[type="radio"].visually-hidden {
 .accede__button {
   z-index: 1;
   margin: 0 0 60px 0;
+  background: #131313;
 }
 
 .accede__text {
@@ -1696,6 +1707,179 @@ input[type="radio"].visually-hidden {
     grid-column-start: 1;
     grid-column-end: 3;
   }
+
+  .functions {
+    margin: 0 0 56px 0;
+  }
+
+  .functions::after {
+    margin: 56px 0 0 0;
+  }
+
+  .functions::before {
+    background-size: 151px 151px, 105px 152px, 154px 226px;
+    background-position: 495px 0, 0 1170px, 578px 1715px;
+  }
+
+  .functions__title {
+    max-width: 286px;
+    justify-self: start;
+    text-align: left;
+    margin: 0 0 30px 26px;
+  }
+
+  .functions__list {
+    width: 100%;
+    display: grid;
+    gap: 60px;
+  }
+
+  .functions__item {
+    grid-template-columns: 262px 60px 1fr;
+  }
+
+  .functions__item::before {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-self: start;
+  }
+
+  .functions__item::after {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    margin: 0 79px 0 0;
+    height: 93px;
+  }
+
+  .functions__text {
+    max-width: 423px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    text-align: left;
+    justify-self: end;
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .use__subtitle {
+    justify-self: start;
+    text-align: left;
+    margin: 100px 0 60px 26px;
+  }
+
+  .use__list {
+    width: 100%;
+    gap: 60px;
+    margin: 0 0 60px 0;
+  }
+
+  .use__item {
+    gap: 30px;
+    justify-items: start;
+  }
+
+  .use__item::before {
+    text-align: left;
+  }
+
+  .use__img {
+    width: 442px;
+    height: 192px;
+  }
+
+  .use__poster {
+    max-width: 180px;
+    font-size: 12.48px;
+  }
+
+  .use__text {
+    max-width: 442px;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: left;
+  }
+
+  .utility {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 30px 0 100px 0;
+    gap: 30px;
+  }
+
+  .utility__inner {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 39px;
+    column-gap: 30px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 0 0 30px 0;
+  }
+
+  .utility__title {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    text-align: left;
+    margin: 0;
+  }
+
+  .utility__text {
+    justify-self: start;
+    text-align: left;
+  }
+
+  .faq__item {
+    grid-template-columns: 40px 1fr;
+    justify-items: center;
+    column-gap: 40px;
+    row-gap: 20px;
+    padding: 54px 0 50px 50px;
+  }
+
+  .faq__details {
+    justify-self: start;
+  }
+
+  .faq__summary {
+    max-width: 452px;
+  }
+
+  .faq__text {
+    font-size: 14px;
+    line-height: 25px;
+    max-width: 398px;
+  }
+
+  .accede::before {
+    background-position: 258px 0;
+  }
+
+  .accede::after {
+    background-size: 122px 122px;
+    background-position: 434px 213px;
+  }
+
+  .accede__wrap {
+    width: 604px;
+    justify-self: start;
+  }
+
+  .accede__wrap::before {
+    left: -45px;
+    width: 649px;
+  }
+
+  .accede__button {
+    margin: 0 0 100px 0;
+  }
+
+  .accede__text {
+    margin: 89px 0 40px 0;
+    max-width: 422px;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: left;
+  }
 }
 
 @media (min-width: 1068px) {
@@ -1749,9 +1933,12 @@ input[type="radio"].visually-hidden {
     height: 70px;
   }
 
+  .button__text--desktop {
+    display: block;
+  }
+
   .button__text {
-    font-size: 16px;
-    line-height: 24px;
+    display: none;
   }
 
   .promo {
@@ -2043,6 +2230,18 @@ input[type="radio"].visually-hidden {
     margin: 60px 0 0 0;
     grid-column-start: 1;
     grid-column-end: 5;
+  }
+
+  .functions__title {
+    max-width: 515px;
+  }
+
+  .functions__text {
+    max-width: 409px;
+  }
+
+  .accede__button {
+    background: linear-gradient(97deg, #7421B0 29%, #D08EFF 140%);
   }
 }
 
