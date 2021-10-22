@@ -101,29 +101,27 @@ function html() {
     .pipe(browsersync.stream());
 }
 function styles() {
-  return (
-    src(path.src.css)
-      .pipe(less())
-      .pipe(cssbeautify())
-      // .pipe(
-      //   autoprefixer({
-      //     overrideBrowserslist: ['last 10 versions'],
-      //     grid: true,
-      //     cascade: true,
-      //   })
-      // )
-      .pipe(gcmq())
-      .pipe(webpcss({ webpClass: '.webp', noWebpClass: '.no-webp' }))
-      .pipe(dest(path.build.css))
-      .pipe(
-        cleancss({
-          level: { 1: { specialComments: 0 } },
-        })
-      )
-      .pipe(concat('style.min.css'))
-      .pipe(dest(path.build.css))
-      .pipe(browsersync.stream())
-  );
+  return src(path.src.css)
+    .pipe(less())
+    .pipe(cssbeautify())
+    .pipe(
+      autoprefixer({
+        overrideBrowserslist: ['last 5 versions'],
+        grid: true,
+        cascade: true,
+      })
+    )
+    .pipe(gcmq())
+    .pipe(webpcss({ webpClass: '.webp', noWebpClass: '.no-webp' }))
+    .pipe(dest(path.build.css))
+    .pipe(
+      cleancss({
+        level: { 1: { specialComments: 0 } },
+      })
+    )
+    .pipe(concat('style.min.css'))
+    .pipe(dest(path.build.css))
+    .pipe(browsersync.stream());
 }
 function fontsStyle(params) {
   let file_content = fs.readFileSync(source_folder + '/less/fonts.less');
