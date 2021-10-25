@@ -319,6 +319,13 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
 }
 
+.button__text--mini {
+  color: #FFFFFF;
+  font-weight: 500;
+  line-height: 18px;
+  font-size: 12px;
+}
+
 .button__text--desktop {
   display: none;
   color: #FFFFFF;
@@ -726,7 +733,8 @@ input[type="radio"].visually-hidden {
 }
 
 .no-webp .screen::after {
-  background-image: url("../img/dest/screenfon.png"); }
+  background-image: url("../img/dest/screenfon.png");
+}
 
 .screen::after {
   content: "";
@@ -769,7 +777,8 @@ input[type="radio"].visually-hidden {
 }
 
 .no-webp .click::after {
-  background-image: url("../img/dest/clickcub.png"); }
+  background-image: url("../img/dest/clickcub.png");
+}
 
 .click::after {
   content: "";
@@ -810,7 +819,8 @@ input[type="radio"].visually-hidden {
 }
 
 .no-webp .link::after {
-  background-image: url("../img/dest/linkfon.png"); }
+  background-image: url("../img/dest/linkfon.png");
+}
 
 .link::after {
   content: "";
@@ -828,7 +838,8 @@ input[type="radio"].visually-hidden {
 }
 
 .no-webp .link::before {
-  background-image: url("../img/dest/ellipselink.png"); }
+  background-image: url("../img/dest/ellipselink.png");
+}
 
 .link::before {
   content: "";
@@ -877,7 +888,8 @@ input[type="radio"].visually-hidden {
 }
 
 .no-webp .editor::after {
-  background-image: url("../img/dest/editorfon.png"); }
+  background-image: url("../img/dest/editorfon.png");
+}
 
 .editor::after {
   content: "";
@@ -962,7 +974,8 @@ input[type="radio"].visually-hidden {
 }
 
 .no-webp .functions::before {
-  background-image: url("../img/dest/functionsfon1.png"), url("../img/dest/functionsfon2.png"), url("../img/dest/functionsfon3.png"); }
+  background-image: url("../img/dest/functionsfon1.png"), url("../img/dest/functionsfon2.png"), url("../img/dest/functionsfon3.png");
+}
 
 .functions::before {
   content: "";
@@ -1012,7 +1025,7 @@ input[type="radio"].visually-hidden {
 }
 
 .functions__item:before {
-  content: "0" counter(myCounter) ".";
+  content: "0"counter(myCounter) ".";
   color: #7421B0;
   margin: 0 30px 0 0;
   font-size: 20px;
@@ -1047,10 +1060,12 @@ input[type="radio"].visually-hidden {
 }
 
 .no-webp .functions__item--cone::after {
-  background-image: url("../img/dest/cone.png"); }
+  background-image: url("../img/dest/cone.png");
+}
 
 .no-webp .functions__item--cube::after {
-  background-image: url("../img/dest/cube.png"); }
+  background-image: url("../img/dest/cube.png");
+}
 
 .functions__item--toroid::after {
   background-image: url("../img/dest/toroid.svg");
@@ -1113,7 +1128,7 @@ input[type="radio"].visually-hidden {
 }
 
 .use__item::before {
-  content: "Шаг " counter(steps) ".";
+  content: "Шаг "counter(steps) ".";
   width: 58px;
   font-size: 18px;
   font-weight: 700;
@@ -1227,7 +1242,8 @@ input[type="radio"].visually-hidden {
 }
 
 .no-webp .utility__wrap::before {
-  background-image: url("../img/dest/trianglefon.png"); }
+  background-image: url("../img/dest/trianglefon.png");
+}
 
 .utility__wrap::before {
   content: "";
@@ -1301,7 +1317,8 @@ input[type="radio"].visually-hidden {
 }
 
 .no-webp .faq::before {
-  background-image: url("../img/dest/fagfon.png"); }
+  background-image: url("../img/dest/fagfon.png");
+}
 
 .faq::before {
   content: "";
@@ -1364,7 +1381,7 @@ input[type="radio"].visually-hidden {
 }
 
 .faq__item:before {
-  content: "0" counter(counterFaq) ".";
+  content: "0"counter(counterFaq) ".";
   color: #7421B0;
   font-size: 24px;
   font-weight: 700;
@@ -1434,7 +1451,8 @@ input[type="radio"].visually-hidden {
 }
 
 .no-webp .accede::before {
-  background-image: url("../img/dest/accedecone.png"); }
+  background-image: url("../img/dest/accedecone.png");
+}
 
 .accede::before {
   content: "";
@@ -1508,8 +1526,8 @@ input[type="radio"].visually-hidden {
 .footer__list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1561,8 +1579,8 @@ input[type="radio"].visually-hidden {
   }
 
   .promo {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: start;
@@ -1676,8 +1694,8 @@ input[type="radio"].visually-hidden {
   }
 
   .about {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 30px;
     text-align: left;
   }
@@ -1845,7 +1863,8 @@ input[type="radio"].visually-hidden {
   }
 
   .no-webp .click::before {
-    background-image: url("../img/dest/clickelipsetable.png"); }
+    background-image: url("../img/dest/clickelipsetable.png");
+  }
 
   .click::before {
     width: 529px;
@@ -1866,7 +1885,8 @@ input[type="radio"].visually-hidden {
   }
 
   .no-webp .link::before {
-    background-image: url("../img/dest/ellipselinktable.png"); }
+    background-image: url("../img/dest/ellipselinktable.png");
+  }
 
   .link::before {
     width: 732px;
@@ -1908,8 +1928,8 @@ input[type="radio"].visually-hidden {
   }
 
   .download {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 30px;
     text-align: left;
   }
@@ -2030,15 +2050,15 @@ input[type="radio"].visually-hidden {
   }
 
   .utility {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     margin: 30px 0 100px 0;
     gap: 30px;
   }
 
   .utility__inner {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     row-gap: 39px;
     -webkit-column-gap: 30px;
     -moz-column-gap: 30px;
@@ -2066,7 +2086,8 @@ input[type="radio"].visually-hidden {
   }
 
   .no-webp .faq::before {
-    background-image: url("../img/dest/fagfontable.png"); }
+    background-image: url("../img/dest/fagfontable.png");
+  }
 
   .faq::before {
     left: -45px;
@@ -2151,8 +2172,8 @@ input[type="radio"].visually-hidden {
 
   .footer__list {
     width: 100%;
-    -ms-grid-columns: (1fr)[3];
-    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .footer__item {
@@ -2263,7 +2284,8 @@ input[type="radio"].visually-hidden {
   }
 
   .no-webp .promo::before {
-    background-image: url("../img/dest/promobefore.png"); }
+    background-image: url("../img/dest/promobefore.png");
+  }
 
   .promo::before {
     content: "";
@@ -2343,8 +2365,8 @@ input[type="radio"].visually-hidden {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0 140px;
-    -ms-grid-columns: (1fr)[4];
-    grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   .about__inner {
@@ -2403,8 +2425,8 @@ input[type="radio"].visually-hidden {
 
   .tool {
     width: 100%;
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 152px;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -2476,7 +2498,8 @@ input[type="radio"].visually-hidden {
   }
 
   .no-webp .click::before {
-    background-image: url("../img/dest/clickelipsedestop.png"); }
+    background-image: url("../img/dest/clickelipsedestop.png");
+  }
 
   .click::before {
     min-height: 920px;
@@ -2509,7 +2532,8 @@ input[type="radio"].visually-hidden {
   }
 
   .no-webp .link::before {
-    background-image: url("../img/dest/ellipselinkdesktop.png"); }
+    background-image: url("../img/dest/ellipselinkdesktop.png");
+  }
 
   .link::before {
     width: 1030px;
@@ -2561,8 +2585,8 @@ input[type="radio"].visually-hidden {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0 140px;
-    -ms-grid-columns: (1fr)[4];
-    grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   .download__button {
@@ -2595,8 +2619,8 @@ input[type="radio"].visually-hidden {
   }
 
   .functions__list {
-    -ms-grid-columns: (1fr)[3];
-    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 80px;
     -webkit-box-align: start;
     -ms-flex-align: start;
@@ -2662,8 +2686,8 @@ input[type="radio"].visually-hidden {
   }
 
   .use__list {
-    -ms-grid-columns: (1fr)[3];
-    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: start;
@@ -2710,8 +2734,8 @@ input[type="radio"].visually-hidden {
   }
 
   .utility {
-    -ms-grid-columns: (1fr)[4];
-    grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 200px 0 182px 0;
     padding: 0 240px;
     -webkit-box-sizing: border-box;
@@ -2757,7 +2781,8 @@ input[type="radio"].visually-hidden {
   }
 
   .no-webp .faq::before {
-    background-image: url("../img/dest/fagfondesktop.png"); }
+    background-image: url("../img/dest/fagfondesktop.png");
+  }
 
   .faq::before {
     left: 198px;
@@ -2820,8 +2845,8 @@ input[type="radio"].visually-hidden {
     padding: 0 240px 229px 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     -webkit-column-gap: 152px;
     -moz-column-gap: 152px;
     column-gap: 152px;
@@ -2924,59 +2949,95 @@ input[type="radio"].visually-hidden {
   }
 }
 
-.webp .screen::after { background-image: url(../img/dest/screenfon.webp); }
+.webp .screen::after {
+  background-image: url(../img/dest/screenfon.webp);
+}
 
-.webp .click::after { background-image: url(../img/dest/clickcub.webp); }
+.webp .click::after {
+  background-image: url(../img/dest/clickcub.webp);
+}
 
-.webp .link::after { background-image: url(../img/dest/linkfon.webp); }
+.webp .link::after {
+  background-image: url(../img/dest/linkfon.webp);
+}
 
-.webp .link::before { background-image: url(../img/dest/ellipselink.webp); }
+.webp .link::before {
+  background-image: url(../img/dest/ellipselink.webp);
+}
 
-.webp .editor::after { background-image: url(../img/dest/editorfon.webp); }
+.webp .editor::after {
+  background-image: url(../img/dest/editorfon.webp);
+}
 
-.webp .functions::before { background-image: url(../img/dest/functionsfon1.webp), url(../img/dest/functionsfon2.webp), url(../img/dest/functionsfon3.webp); }
+.webp .functions::before {
+  background-image: url(../img/dest/functionsfon1.webp), url(../img/dest/functionsfon2.webp), url(../img/dest/functionsfon3.webp);
+}
 
-.webp .functions__item--cone::after { background-image: url(../img/dest/cone.webp); }
+.webp .functions__item--cone::after {
+  background-image: url(../img/dest/cone.webp);
+}
 
-.webp .functions__item--cube::after { background-image: url(../img/dest/cube.webp); }
+.webp .functions__item--cube::after {
+  background-image: url(../img/dest/cube.webp);
+}
 
-.webp .utility__wrap::before { background-image: url(../img/dest/trianglefon.webp); }
+.webp .utility__wrap::before {
+  background-image: url(../img/dest/trianglefon.webp);
+}
 
-.webp .faq::before { background-image: url(../img/dest/fagfon.webp); }
+.webp .faq::before {
+  background-image: url(../img/dest/fagfon.webp);
+}
 
-.webp .accede::before { background-image: url(../img/dest/accedecone.webp); }
-
-@media (min-width: 768px) {
-
-  .webp .click::before { background-image: url(../img/dest/clickelipsetable.webp); }
+.webp .accede::before {
+  background-image: url(../img/dest/accedecone.webp);
 }
 
 @media (min-width: 768px) {
 
-  .webp .link::before { background-image: url(../img/dest/ellipselinktable.webp); }
+  .webp .click::before {
+    background-image: url(../img/dest/clickelipsetable.webp);
+  }
 }
 
 @media (min-width: 768px) {
 
-  .webp .faq::before { background-image: url(../img/dest/fagfontable.webp); }
+  .webp .link::before {
+    background-image: url(../img/dest/ellipselinktable.webp);
+  }
+}
+
+@media (min-width: 768px) {
+
+  .webp .faq::before {
+    background-image: url(../img/dest/fagfontable.webp);
+  }
 }
 
 @media (min-width: 1068px) {
 
-  .webp .promo::before { background-image: url(../img/dest/promobefore.webp); }
+  .webp .promo::before {
+    background-image: url(../img/dest/promobefore.webp);
+  }
 }
 
 @media (min-width: 1068px) {
 
-  .webp .click::before { background-image: url(../img/dest/clickelipsedestop.webp); }
+  .webp .click::before {
+    background-image: url(../img/dest/clickelipsedestop.webp);
+  }
 }
 
 @media (min-width: 1068px) {
 
-  .webp .link::before { background-image: url(../img/dest/ellipselinkdesktop.webp); }
+  .webp .link::before {
+    background-image: url(../img/dest/ellipselinkdesktop.webp);
+  }
 }
 
 @media (min-width: 1068px) {
 
-  .webp .faq::before { background-image: url(../img/dest/fagfondesktop.webp); }
+  .webp .faq::before {
+    background-image: url(../img/dest/fagfondesktop.webp);
+  }
 }
