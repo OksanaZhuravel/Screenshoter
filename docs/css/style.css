@@ -319,6 +319,7 @@ input[type="radio"].visually-hidden {
   color: #FFFFFF;
   font-weight: 500;
   line-height: 18px;
+  font-size: 12px;
 }
 
 .button__text--mini {
@@ -2261,6 +2262,10 @@ input[type="radio"].visually-hidden {
   .button {
     width: 235px;
     height: 70px;
+  }
+
+  .button__text {
+    font-size: 16px;
   }
 
   .button__text--mini {
