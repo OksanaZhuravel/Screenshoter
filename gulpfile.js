@@ -52,7 +52,8 @@ function browserSync(params) {
   });
 }
 function scripts() {
-  return src(path.src.js)
+  return src(['node_modules/wow.js/dist/wow.min.js', path.src.js])
+    .pipe(concat('script.js'))
     .pipe(dest(path.build.js))
     .pipe(uglify())
     .pipe(concat('script.min.js'))
