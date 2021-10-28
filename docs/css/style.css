@@ -17,21 +17,21 @@ input[type="radio"].visually-hidden {
 
 @font-face {
   font-family: "rubik";
-  src: url("../fonts/rubik.ttf") format("ttf"), url("../fonts/rubik.woff") format("woff"), url("../fonts/rubik.woff2") format("woff2");
+  src: url("../fonts/rubik-bold.ttf") format("ttf"), url("../fonts/rubik-bold.woff") format("woff"), url("../fonts/rubik-bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "rubik";
-  src: url("../fonts/rubik.ttf") format("ttf"), url("../fonts/rubik.woff") format("woff"), url("../fonts/rubik.woff2") format("woff2");
+  src: url("../fonts/rubik-medium.ttf") format("ttf"), url("../fonts/rubik-medium.woff") format("woff"), url("../fonts/rubik-medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "rubik";
-  src: url("../fonts/rubik.ttf") format("ttf"), url("../fonts/rubik.woff") format("woff"), url("../fonts/rubik.woff2") format("woff2");
+  src: url("../fonts/rubik-regular.ttf") format("ttf"), url("../fonts/rubik-regular.woff") format("woff"), url("../fonts/rubik-regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
